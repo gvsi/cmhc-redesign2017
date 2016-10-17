@@ -212,12 +212,12 @@
     }
     
     .row-videos{
-    	background: url("http://www.cmhc.utexas.edu/IMAGES/watchbackground.png");
+    	background: url("http://www.cmhc.utexas.edu/images/watchbackground.png");
     	height:165px;
     	width:288px;
 		margin-top:10px;
 		margin-left:1px;
-		background-repeat:none;
+		background-repeat: no-repeat;
     }
 	.row-videos-small{
 		width:240px;
@@ -230,25 +230,25 @@
    }
 	
      .row-social-media{
-    	background: url("http://www.cmhc.utexas.edu/IMAGES/socialmediabackground.png");
+    	background: url("http://www.cmhc.utexas.edu/images/socialmediabackground.png");
     	text-align:center;
     	
     }
     
     
     .row-social-mediainclude{
-    	background: url("http://www.cmhc.utexas.edu/IMAGES/socialmediabackgroundinclude.png");
+    	background: url("http://www.cmhc.utexas.edu/images/socialmediabackgroundinclude.png");
     	text-align:center;
     }
     
      .row-bottom-footer{
-    	background: url("http://www.cmhc.utexas.edu/IMAGES/bottomfooter.png");
+    	background: url("http://www.cmhc.utexas.edu/images/bottomfooter.png");
     	text-align:center;
 		background-color:#000;
     }
     
      .row-large-navigation{
-    	background: url("http://www.cmhc.utexas.edu/IMAGES/navigationbackground.png");
+    	background: url("http://www.cmhc.utexas.edu/images/navigationbackground.png");
     background-color:#1b2a39;	
       }
       
@@ -271,7 +271,7 @@
     .btn-info{
      	background-color:transparent;
      	border-color:transparent;
-     	font-family:!important "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+     	font-family:"Helvetica Neue", Helvetica, Verdana, Arial, sans-serif !important;
      	font-size: 14px;
      	color: #ffffff;
      	letter-spacing: 0.3ex;
@@ -297,7 +297,7 @@
 	.btn-info-small{
      	background-color:transparent;
      	border-color:transparent;
-     	font-family:!important "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+     	font-family:"Helvetica Neue", Helvetica, Verdana, Arial, sans-serif !important;
      	color: #ffffff;
 		font-weight: normal;
      	font-size: 16px;
@@ -323,7 +323,7 @@
 	.btn-info-smallm{
      	background-color:transparent;
      	border-color:transparent;
-     	font-family:!important "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+     	font-family:"Helvetica Neue", Helvetica, Verdana, Arial, sans-serif !important;
      	color: #161524;
 		font-weight: normal;
      	font-size: 16px;
@@ -353,7 +353,7 @@
 		.btn-info-footer{
      	background-color:transparent;
      	border-color:transparent;
-     	font-family:!important "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+     	font-family:"Helvetica Neue", Helvetica, Verdana, Arial, sans-serif !important;
      	color: #ffffff;
 		font-weight: normal;
      	font-size: 10px;
@@ -676,7 +676,7 @@
 	 	color:black;
 	 	text-align:right;
 	 	font-size:11px;
-	 	font-weight:light;
+	 	font-weight:lighter;
 	 	margin-top:10px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
@@ -684,7 +684,7 @@
 	 	color:black;
 	 	text-align:left;
 	 	font-size:14px;
-	 	font-weight:light;
+	 	font-weight:lighter;
 	 	margin-top:35px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
@@ -692,7 +692,7 @@
 	 	color:black;
 	 	text-align:left;
 	 	font-size:14px;
-	 	font-weight:light;
+	 	font-weight:lighter;
 	 	margin-top:43px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
@@ -701,7 +701,7 @@
 	 	color:black;
 	 	text-align:right;
 	 	font-size:14px;
-	 	font-weight:light;
+	 	font-weight:lighter;
 	 	margin-top:5px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
@@ -711,14 +711,14 @@
 	    font-size:11px;
 	 	letter-spacing: 0.10ex;
 	 	margin-top:12px;
-		text-align:left-horizontal;
+		text-align:left;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
 	 .custom9{
 	 	color:white;
 	 	text-align:center;
 	 	font-size:11px;
-	 	font-weight:light;
+	 	font-weight:lighter;
 	 	margin-top:10px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
@@ -746,7 +746,7 @@
 	.col-xs-12-services{
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:15px;
      margin-top:4px;
      margin-bottom:4px;
@@ -756,7 +756,7 @@
      background-color: #476b91;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:9px;
     
    }
@@ -766,7 +766,7 @@
      background-color: #dddde0;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:9px;
     
    }
@@ -776,7 +776,7 @@
      background-color: #3166b6;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:9px;
     
    }
@@ -786,7 +786,7 @@
      background-color: #dddde0;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:9px;
     
    }
@@ -795,7 +795,7 @@
      background-color: #894605;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:9px;
     
    }
@@ -805,7 +805,7 @@
      background-color: #d0d8e2;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:8px;
     
    }
@@ -817,7 +817,7 @@
      background-color: #d0d8e2;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:8px;
     
    }
@@ -827,7 +827,7 @@
      background-color: #e3e7ed;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:8px;
     
    }
@@ -837,7 +837,7 @@
      background-color: #d0d8e2;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:5px;
     
    }
@@ -847,7 +847,7 @@
      background-color: #e3e7ed;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:5px;
     
    }
@@ -857,7 +857,7 @@
      background-color: #0066ff;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-     text-align: left-horizontal;
+     text-align: left;
      padding:11px;
      margin-top:4px;
    }
@@ -865,7 +865,7 @@
      height: 50px;
      background-color: #0066ff;
      color: white;
-     text-align: left-horizontal;
+     text-align: left;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      padding:11px;/* 
      border:5px solid black; */
@@ -874,8 +874,8 @@
      /* //height: 216px; */
      background-color: #000000;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
-     text-align: left-horizontal;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+     text-align: left;
      padding:6px;
      margin-bottom:4px;/*
      /*border:5px solid black; */
@@ -884,7 +884,7 @@
      height: 78px;
      background-color: #003366;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:11px;/* 
      border:5px solid black; */
@@ -893,7 +893,7 @@
      height: 50px;
      background-color: #003366;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:11px;/* 
      border:5px solid black; */
@@ -902,7 +902,7 @@
      height: 78px;
      background-color: #003366;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:2px;/* 
      border:5px solid black; */
@@ -911,7 +911,7 @@
      height: 78px;
      background-color: #003366;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:2px;
      margin-top:4px;
@@ -922,7 +922,7 @@
      height: 50px;
      background-color: #003366;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:11px;/* 
      border:5px solid black; */
@@ -931,7 +931,7 @@
      height: 78px;
      background-color: #003366;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:2px;
      margin-top:4px;/* 
@@ -941,7 +941,7 @@
      height: 50px;
      background-color: #003366;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:11px;/* 
      border:5px solid black; */
@@ -950,7 +950,7 @@
      height: 50px;
      background-color: #BF5700;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:11px;/* 
      border:5px solid black; */
@@ -960,7 +960,7 @@
      background-color: #BF5700;
      color: white;
      font-weight: bold;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center; 
      padding:5px;/* 
      border:5px solid black; */
@@ -972,7 +972,7 @@
      background-color: #BF5700;
      color: white;
      font-weight: bold;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center; 
      padding:5px;
      margin-top:4px;/* 
@@ -984,7 +984,7 @@
      background-color: #BF5700;
      color: white;
      font-weight: bold;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center; 
      padding:5px;/* 
      border:5px solid black; */
@@ -993,7 +993,7 @@
    	 height:50px;
      background-color: #BF5700;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:11px;/* 
      border:5px solid black; */
@@ -1002,7 +1002,7 @@
    	 height:50px;
      background-color: #BF5700;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      letter-spacing: +0.09ex;
      padding:11px;/* 
@@ -1014,7 +1014,7 @@
    	 height:50px;
      background-color: #0c9ba5;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      letter-spacing: +0.09ex;
      padding:11px;/* 
@@ -1027,7 +1027,7 @@
      background-color: #666666;
      color: white;
      font-size:15px;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:8px;/* 
      border:5px solid black; */
@@ -1037,7 +1037,7 @@
    	 height:50px;
      background-color: #cc6600;
      color: white;
-     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: center;
      padding:5px;
      margin-bottom:4px;/* 
@@ -1195,9 +1195,9 @@
      	border-color:transparent;
      	font-size: 12px; line-height: 17px; letter-spacing: 0.10ex; color: #5f6373;
      }
-.homewhite { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #ffffff; text-align:left-horizontal;}
-.homewhite2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 23px; line-height: 25px; color: #ffffff; text-align:left-horizontal;}
-.homegrey { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 17px; color: #BF5700; text-align:left-horizontal;letter-spacing: +0.03ex;}
+.homewhite { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #ffffff; text-align:left;}
+.homewhite2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 23px; line-height: 25px; color: #ffffff; text-align:left;}
+.homegrey { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 17px; color: #BF5700; text-align:left;letter-spacing: +0.03ex;}
 .homeorange { font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 18px; color: #f0a441; font-weight: lighter; letter-spacing: -0.03ex; }
 .homegreen { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 15px; color: #99cc66; }
 .homegray { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #333333; letter-spacing: +0.10ex;}
@@ -1272,7 +1272,7 @@ span.bodytextsmall3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-
 span.bodytextsmall2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; letter-spacing: 0.10ex; color: #666666}
 
 /*Setting general text attributes*/
-span.bodytext_headerwhite {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 30px; line-height: 30px; font-weight: lighter; letter-spacing: -0.05ex; font-weight: medium; color: #FFFFFF}
+span.bodytext_headerwhite {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 30px; line-height: 30px; font-weight: lighter; letter-spacing: -0.05ex; font-weight: normal; color: #FFFFFF}
 
 
 span.whitetext {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; color: #FFFFFF}
@@ -1828,7 +1828,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #ccwh a{
    height: 85px;
    width: 170px; 
-   background: url('IMAGES/button_ccwh.png') no-repeat left top;
+   background: url('images/button_ccwh.png') no-repeat left top;
 }
 #ccwh a:hover{
    background-position: left -85px; 
@@ -1838,7 +1838,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #ccsm a{
    height: 85px;
    width: 170px; 
-   background: url('IMAGES/button_ccsm.png') no-repeat left top;
+   background: url('images/button_ccsm.png') no-repeat left top;
 }
 #ccsm a:hover{
    background-position: left -85px; 
@@ -1848,7 +1848,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #ccai a{
    height: 85px;
    width: 170px; 
-   background: url('IMAGES/button_ccai.png') no-repeat left top;
+   background: url('images/button_ccai.png') no-repeat left top;
 }
 #ccai a:hover{
    background-position: left -85px; 
@@ -1858,7 +1858,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #ccgm a{
    height: 85px;
    width: 170px; 
-   background: url('IMAGES/button_ccgm.png') no-repeat left top;
+   background: url('images/button_ccgm.png') no-repeat left top;
 }
 #ccgm a:hover{
    background-position: left -85px; 
@@ -1872,7 +1872,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTfirstaid a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_firstaid.gif') no-repeat left top;
+   background: url('images/HTbutton_firstaid.gif') no-repeat left top;
 }
 #HTfirstaid a:hover{
    background-position: left -150px; 
@@ -1882,7 +1882,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTillness a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_illness.gif') no-repeat left top;
+   background: url('images/HTbutton_illness.gif') no-repeat left top;
 }
 #HTillness a:hover{
    background-position: left -150px; 
@@ -1893,7 +1893,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTcoldflu a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_coldflu.gif') no-repeat left top;
+   background: url('images/HTbutton_coldflu.gif') no-repeat left top;
 }
 #HTcoldflu a:hover{
    background-position: left -150px; 
@@ -1904,7 +1904,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTalcoholdrugs a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_alcoholdrugs.gif') no-repeat left top;
+   background: url('images/HTbutton_alcoholdrugs.gif') no-repeat left top;
 }
 #HTalcoholdrugs a:hover{
    background-position: left -150px; 
@@ -1915,7 +1915,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTnutrition a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_nutrition.gif') no-repeat left top;
+   background: url('images/HTbutton_nutrition.gif') no-repeat left top;
 }
 #HTnutrition a:hover{
    background-position: left -150px; 
@@ -1926,7 +1926,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTsexhelathrel a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_sexhealth.gif') no-repeat left top;
+   background: url('images/HTbutton_sexhealth.gif') no-repeat left top;
 }
 #HTsexhelathrel a:hover{
    background-position: left -150px; 
@@ -1937,7 +1937,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTskin a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_skin.gif') no-repeat left top;
+   background: url('images/HTbutton_skin.gif') no-repeat left top;
 }
 #HTskin a:hover{
    background-position: left -150px; 
@@ -1948,7 +1948,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTmentalhealth a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_mentalhealth.gif') no-repeat left top;
+   background: url('images/HTbutton_mentalhealth.gif') no-repeat left top;
 }
 #HTmentalhealth a:hover{
    background-position: left -150px; 
@@ -1959,7 +1959,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTsafety a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_safety.gif') no-repeat left top;
+   background: url('images/HTbutton_safety.gif') no-repeat left top;
 }
 #HTsafety a:hover{
    background-position: left -150px; 
@@ -1970,7 +1970,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTdigestion a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_digestion.gif') no-repeat left top;
+   background: url('images/HTbutton_digestion.gif') no-repeat left top;
 }
 #HTdigestion a:hover{
    background-position: left -150px; 
@@ -1981,7 +1981,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTtravel a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_travel.gif') no-repeat left top;
+   background: url('images/HTbutton_travel.gif') no-repeat left top;
 }
 #HTtravel a:hover{
    background-position: left -150px; 
@@ -1992,7 +1992,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #HTlifestyle a{
    height: 150px;
    width: 90px; 
-   background: url('IMAGES/HTbutton_lifestyle.gif') no-repeat left top;
+   background: url('images/HTbutton_lifestyle.gif') no-repeat left top;
 }
 #HTlifestyle a:hover{
    background-position: left -150px; 
@@ -2002,7 +2002,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #pill a{
    height: 100px;
    width: 170px; 
-   background: url('IMAGES/button_video_pill.png') no-repeat left top;
+   background: url('images/button_video_pill.png') no-repeat left top;
 }
 #pill a:hover{
    background-position: left -100px; 
@@ -2011,7 +2011,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #ec a{
    height: 100px;
    width: 170px; 
-   background: url('IMAGES/button_video_ec.png') no-repeat left top;
+   background: url('images/button_video_ec.png') no-repeat left top;
 }
 #ec a:hover{
    background-position: left -100px; 
@@ -2020,7 +2020,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #intro a{
    height: 100px;
    width: 170px; 
-   background: url('IMAGES/button_video_intro.png') no-repeat left top;
+   background: url('images/button_video_intro.png') no-repeat left top;
 }
 #intro a:hover{
    background-position: left -100px; 
@@ -2030,7 +2030,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #chargesv a{
    height: 100px;
    width: 170px; 
-   background: url('IMAGES/button_video_charges.png') no-repeat left top;
+   background: url('images/button_video_charges.png') no-repeat left top;
 }
 #chargesv a:hover{
    background-position: left -100px; 
@@ -2040,7 +2040,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 #checkbox a{
    height: 20px;
    width: 20px; 
-   background: url('IMAGES/checkbox.gif') no-repeat left top;
+   background: url('images/checkbox.gif') no-repeat left top;
 }
 #checkbox a:hover{
    background-position: left -20px; 
