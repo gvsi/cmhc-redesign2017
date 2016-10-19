@@ -2087,9 +2087,9 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 	display: none;
 }
 
-.submenubtn:hover .sub-dropdown-content {
-	display: block;
-}
+/*.submenubtn:hover .sub-dropdown-content {*/
+	/*display: block;*/
+/*}*/
 
 .dropdown-content a {
 	color: black;
@@ -2117,13 +2117,22 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 }
 
 @media only screen and (max-width : 768px) {
+	.dropdown {
+		margin-top:5px;
+	}
+
 	.dropbtn {
-		width: 300px;
+		width: 350px;
 	}
 
 	.dropdown-content {
-		width:300px;
+		width:350px;
 	}
+
+	.dropdown:hover > .dropdown-content {
+		display: none;
+	}
+
 	.dropdown-content {
 		position: relative;
 	}
