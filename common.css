@@ -82,7 +82,7 @@
    
    
    .row-top-grey{
-     background-color: #e3e4e5;
+     background-color: #eaeaea;
      text-align: center;
    }
    
@@ -677,7 +677,7 @@
 	 	text-align:right;
 	 	font-size:11px;
 	 	font-weight:lighter;
-	 	margin-top:10px;
+	 	margin-top:20px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
 	 .custom5{
@@ -685,7 +685,7 @@
 	 	text-align:left;
 	 	font-size:14px;
 	 	font-weight:lighter;
-	 	margin-top:35px;
+	 	margin-top:20px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
 	 .custom6{
@@ -699,10 +699,10 @@
 	 
 	 .custom7{
 	 	color:black;
-	 	text-align:right;
+	 	text-align:left;
 	 	font-size:14px;
 	 	font-weight:lighter;
-	 	margin-top:5px;
+	 	margin-top:35px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
 	 
@@ -1224,6 +1224,8 @@ span.homepageheader {  font-family: Arial, Helvetica, sans-serif; font-size: 53p
 span.homepageheader_groups {  font-family: Arial, Helvetica, sans-serif; font-size: 41px; line-height: 50px; color: #244479}
 
 span.homepageheader_groups2 {  font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 25px; color: #000000}
+
+span.homepageheader_groups3 {  font-family: Arial, Helvetica, sans-serif; font-size: 23px; line-height: 28px; color: #000000}
 
 span.mobileheader {  font-family: "Helvetica", sans-serif; font-size: 27px; line-height: 40px; color: #000000}
 
