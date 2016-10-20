@@ -2101,6 +2101,10 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
+.sub-dropdown-content {
+	height: 250px;
+	overflow: scroll;
+}
 .dropdown:hover > .dropdown-content {
 	display: block;
 }
@@ -2135,6 +2139,10 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 
 	.dropdown-content {
 		position: relative;
+	}
+
+	.sub-dropdown-content {
+		height: auto;
 	}
 
 	.dropbtn i {
