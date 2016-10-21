@@ -55,16 +55,35 @@
 		<div class="hidden-xs col-sm-3" style="margin-top: 40px">&nbsp; <a class="a_class_dropdown" href="aboutcmhc.html">About CMHC</a> <span class="orangetext">&nbsp;l&nbsp;</span> <a class="a_class_dropdown" href="contactcmhc.html">Contact</a></span>
 		</div>
 
+		 <div class="col-xs-2 visible-xs" style="margin-top: 15px">
+			 <img src="images/universal/searchicon_home.png" id="mobile-search-btn" alt="search" style="height: 26px;top: 10px;right: 20px;position: absolute;cursor:pointer" />
+		 </div> 
 
-		<div class="col-xs-2 visible-xs" style="margin-top: 15px"><img src="images/universal/searchicon_home.png" alt="search" class="img-responsive" />
-		</div>
-
+		 <div class="cse-branding-bottom hidden-xs col-sm-4 search-container">  
+			<form name="cse_searchbox" action="https://cmhc.utexas.edu/search.html" method="get" id="cse_searchbox"> 
+			<input type="hidden" name="cx" value="011526861309857669012:ptgfi3yl6li" /> 
+			<input type="hidden" name="cof" value="FORID:11" />
+			<input type="text" class="search-input" name="q" placeholder="search..."> 
+			<input type="image" class="search-btn" type="submit" src="images/universal/searchicon.png" border="0" alt="Submit"/> 
+			</form>
+		</div>    
 
 	</div><!-- (this ends the container-fluid tag) -->
 
 </div><!-- (this ends the row-top-grey tag) -->
 
-
+<div class="row row-top-grey" id="mobile-search-container" style="display:none;height:60px;">
+	<center>
+	<div class="cse-branding-bottom search-container">  
+		<form name="cse_searchbox" action="https://cmhc.utexas.edu/search.html" method="get" id="cse_searchbox"> 
+			<input type="hidden" name="cx" value="011526861309857669012:ptgfi3yl6li" /> 
+			<input type="hidden" name="cof" value="FORID:11" />
+			<input type="text" class="search-input" name="q" placeholder="search..."> 
+			<input type="image" class="search-btn" type="submit" src="images/universal/searchicon.png" style="left:100px!important" border="0" alt="Submit"/> 
+		</form>
+	</div>    
+	</center>
+</div>
 
 <div class="row row-top-white" style="width:inherit;margin:inherit;">
 	<div class="container-fluid"><!-- (this starts the container-fluid tag) -->
@@ -479,7 +498,11 @@
 		$(this).find(".sub-dropdown-content").toggle();
 		$(this).find(".fa-angle-double-up").toggle();
 		$(this).find(".fa-angle-double-down").toggle();
-	})
+	});
+
+	$("#mobile-search-btn").click(function(e) {
+		$("#mobile-search-container").toggle();
+	});
 </script>
 
 </html>
