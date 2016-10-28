@@ -86,6 +86,13 @@
      text-align: center;
    }
    
+   .row-top-grey2{
+     background-color: #d6d6d7;
+     text-align: center;
+     padding-top:13px;
+     
+   }
+   
    .row-top-vav{
      background-color: #486d8b;
      text-align: center;
@@ -382,17 +389,18 @@
      	background-color:transparent;
      	border-color:transparent;
      	font-size: 20px;
-     	color: #ffffff;
+     	color: #000000;
   		line-height: 1.428571429;
 		display: block;
  		width: 100%;
+ 		font-family:"Arial", Helvetica, Arial, sans-serif;
      }
      .btn-info-main:hover,
 	 .btn-info-main:focus,
 	 .btn-info-main:active,
 	 .btn-info-main.active,
 	 .open .dropdown-toggle.btn-info-main{
-	    color: #ffffff;
+	    color: #000000;
 	    background-color: transparent;
 	    border-color: transparent;
 	 }
@@ -575,30 +583,7 @@
 	  background-image: none;
 	}
 	
-	
-	.btn-info-desktopspecial{
-     	background-color:transparent;
-     	border-color:transparent;
-     	font-size: 20px;
-     	color: #283f56;
-  		line-height: 1.22;
-		display: block;
- 		width: 100%;
-     }
-     .btn-info-desktopspecial:hover,
-	 .btn-info-desktopspecial:focus,
-	 .btn-info-desktopspecial:active,
-	 .btn-info-desktopspecial.active,
-	 .open .dropdown-toggle.btn-info-main{
-	    color: #283f56;
-	    background-color: transparent;
-	    border-color: transparent;
-	 }
-	.btn-info-desktopspecial:active,
-	.btn-info-desktopspecial.active,
-	.open .dropdown-toggle.btn-info-desktop {
-	  background-image: none;
-	}
+
 	
 	
 	.btn-info-charges{
@@ -832,13 +817,13 @@
     
    }
    
-   .col-xs-12-desktopspecial{
-     height: 35px;
-     background-color: #d0d8e2;
+   .col-xs-12-footerbox{
+     height: 45px;
+     background-color: #d9d9da;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: left;
-     padding:5px;
+     padding:8px;
     
    }
    
@@ -1659,13 +1644,13 @@ a:focus.a_class_largeblue { font-family: Verdana, Arial, Helvetica, sans-serif; 
 
 /*Here is the HT link*/
 
-a:link.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px; font-weight: lighter; text-decoration: none; color: #a15204; }
+a:link.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 12px; line-height: 16px; font-weight: lighter; text-decoration: none; color: #000000; }
 
-a:visited.a_class_footer {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: none; color: #a15204; }
+a:visited.a_class_footer {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 12px; line-height: 16px;  font-weight: lighter; text-decoration: none; color: #000000; }
 
-a:hover.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #a15204; }
+a:hover.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 12px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #BF5700; }
 
-a:focus.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #a15204; }
+a:focus.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 12px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #BF5700; }
 
 
 
@@ -1707,13 +1692,16 @@ a:focus.a_class_lists { font-family: Arial, Helvetica, Verdana sans-serif; font-
 
 /*Here is the internal link*/
 
-a:link.a_class_dropdown { font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 20px; font-weight: lighter; text-decoration: none; color: #000000; }
+a:link.a_class_dropdown { font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 22px; font-weight: lighter; text-decoration: none; color: #000000; }
 
-a:visited.a_class_dropdown {  font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 20px;  font-weight: lighter; text-decoration: none; color: #000000; }
+a:visited.a_class_dropdown {  font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 22px;  font-weight: lighter; text-decoration: none; color: #000000; }
 
-a:hover.a_class_dropdown { font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 20px;  font-weight: lighter; color: #BF5700; text-decoration: underline; }
+a:hover.a_class_dropdown { font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 22px;  font-weight: lighter; color: #BF5700; text-decoration: underline; }
 
-a:focus.a_class_dropdown { font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 20px;  font-weight: lighter; color: #BF5700; text-decoration: underline; }
+a:focus.a_class_dropdown { font-family:  "Helvetica" Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 22px;  font-weight: lighter; color: #BF5700; text-decoration: underline; }
+
+
+
 
 
 /*Here is the internal green link*/
@@ -2051,15 +2039,14 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 
 
 
-
-
 .dropbtn {
 	background-color: #3166b6;
 	color: white;
 	padding-top: 16px;
+	font-weight: lighter;
 	padding-bottom: 16px;
 	width: 240px;
-	font-size: 16px;
+	font-family: "Arial", Verdana sans-serif; font-size: 17px; line-height: 20px; font-weight: lighter; letter-spacing: +0.05ex; text-decoration: none; color: #FFFFFF; 
 	border: none;
 	cursor: pointer;
 	-webkit-border-radius: 4px;
@@ -2073,7 +2060,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 }
 
 .dropdown-content {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: lighter;
 	z-index: 10;
 	display: none;
@@ -2093,15 +2080,16 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 }
 
 .search-input {
-	background-color: #dedfdf;
-	border-color: #dedfdf;
+	background-color: #ffffff;
+	border-color: #dbdcdd;
 	border-style: double;
-	width: 240px;
-	font-size:16px;
+	width: 280px;
+	font-size:18px;
 	color: black;
 	padding-left: 12px;
+	padding-right: 60px;
 	display:block;
-	height: 40px;
+	height: 52px;
 	margin-top: -30px;
 	border-radius:2px;
 }
@@ -2109,9 +2097,9 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 .search-btn {
 	position: relative;
 	display: block;
-	top: -60px;
-	left: 200px;
-	height: 40px;
+	top: -70px;
+	left: 230px;
+	height: 50px;
 	border-radius:2px;
 }
 
