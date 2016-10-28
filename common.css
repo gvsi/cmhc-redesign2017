@@ -2075,7 +2075,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 }
 
 .search-container {
-	top: 0px;
+	top: -20px;
 	height: 60px;
 }
 
