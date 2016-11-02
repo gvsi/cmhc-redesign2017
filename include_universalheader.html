@@ -151,7 +151,7 @@
     <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  END CRISIS MESSAGE  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 </div>
 
-<div id="navbar" class="row row-top-white hidden-xs"><BR>
+<div id="navbar" class="row row-top-white"><BR>
     <div class="container-fluid">
         <div class="col-xs-12 col-sm-3 custom3 ">
             <div class="dropdown">
@@ -273,13 +273,50 @@
         $(this).find(".fa-angle-double-down").toggle();
     });
 
-    $("#mobile-search-btn").click(function(e) {
-        $("#mobile-search-container").toggle();
-        $("#mobile-info-navbar").toggle();
-        if ($("#navbar").hasClass("hidden-xs")) {
-            $("#navbar").removeClass("hidden-xs")
-        } else {
-            $("#navbar").addClass("hidden-xs");
-        }
-    });
+    (function($, viewport){
+
+        $(document).ready(function() {
+            if(viewport.is('xs')) {
+                $("#navbar").hide();
+            }
+        });
+
+        $("#mobile-search-btn").click(function(e) {
+            if( viewport.is('xs') ) {
+                if ($("#mobile-info-navbar").is(":visible")) {
+                    $("#mobile-info-navbar").hide();
+                } else {
+                    $("#mobile-info-navbar").show();
+                }
+
+                if ($("#mobile-search-container").is(":visible")) {
+                    $("#mobile-search-container").hide();
+                } else {
+                    $("#mobile-search-container").show();
+                }
+
+                if ($("#navbar").is(":visible")) {
+                    $("#navbar").hide();
+                } else {
+                    $("#navbar").show();
+                }
+            }
+        });
+
+        // Execute code each time window size changes
+        $(window).resize(
+                viewport.changed(function() {
+                    // Executes only in XS breakpoint
+                    if( viewport.is('>xs') ) {
+                        $("#mobile-info-navbar").hide();
+                        $("#mobile-search-container").hide();
+                        $("#navbar").show();
+                    } else {
+                        $("#navbar").hide();
+                    }
+
+                }, 150)
+        );
+
+    })(jQuery, ResponsiveBootstrapToolkit);
 </script>
