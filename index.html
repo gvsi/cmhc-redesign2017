@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="common.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap-toolkit.min.js"></script>
 	<link rel="icon"
 		  type="image/png"
 		  href="http://www.utexas.edu/favicon.ico">
@@ -487,10 +488,8 @@
 						<br/> <br/><a class="a_class_dropdown" href="#">Medical widthdrawals & course load reductions</a>
 					</div>
 
-					<div class="col-sm-1 hidden-xs">
-						<center><!-- <br/><img src="images/universal/greyfooterline.jpg" alt="graphic element used to separate sections of content" width="1" height="450" /> --></center>
-					</div>
-					<div class="col-sm-6 col-xs-6 custom5">
+
+					<div class="col-sm-7 col-xs-6 custom5">
 						<a class="a_class_dropdown" href="#">Groups & Classes</a>
 						<br/> <br/> <a class="a_class_dropdown" href="#">MindBody Lab</a>
 						<br/> <br/> <a class="a_class_dropdown" href="#">Medication & psychiatric services</a>
@@ -533,11 +532,11 @@
 	<div class="container-fluid"><!-- (this starts the container-fluid tag) -->
 		<div class="col-sm-12 col-xs-12">
 			<div class="row">
-				<div class="col-sm-offset-3 col-sm-6 col-xs-12">
+				<div class="col-sm-6 col-xs-12">
 					<a href="#"><img src="images/universal/vavlogo_footer.png" alt="voices against violence"  vspace="40" class="img-responsive" /></a>
 				</div>
 
-				<div class="col-sm-offset-3 col-sm-6 col-xs-12">
+				<div class="col-sm-6 col-xs-12">
 					<a href="#"><img src="images/universal/btologo_footer.png" alt="Be That One UT's suicide prevention program" width="700" height="100" vspace="30" class="img-responsive" /></a>
 				</div>
 			</div>
@@ -581,6 +580,21 @@
 	$("#mobile-search-btn").click(function(e) {
 		$("#mobile-search-container").toggle();
 	});
+
+	(function($, viewport){
+
+		// Execute code each time window size changes
+		$(window).resize(
+				viewport.changed(function() {
+					// Executes only in XS breakpoint
+					if( viewport.is('>xs') ) {
+						$("#mobile-search-container").hide();
+					}
+				}, 300)
+		);
+
+	})(jQuery, ResponsiveBootstrapToolkit);
+
 </script>
 
 </html>

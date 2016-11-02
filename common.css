@@ -2141,13 +2141,25 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 	right: 20px;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 992px) {
+	.dropbtn {
+		width: 180px;
+		font-size: 13px;
+	}
+
+	.dropdown-content {
+		width: 169px;
+	}
+}
+
+@media only screen and (max-width : 767px) {
 	.dropdown {
 		margin-top:5px;
 	}
 
 	.dropbtn {
 		width: 350px;
+		font-size: 13px;
 	}
 
 	.dropdown-content {
