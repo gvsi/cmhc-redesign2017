@@ -2066,7 +2066,6 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 240px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -2075,7 +2074,7 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 }
 
 .search-container {
-	top: 0px;
+	top: 5px;
 	height: 60px;
 }
 
@@ -2120,14 +2119,16 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 	text-align: left;
 }
 
+.dropdown-content {
+	display: none;
+	width: 240px;
+}
+
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .sub-dropdown-content {
 	height: 250px;
 	overflow: scroll;
-}
-.dropdown:hover > .dropdown-content {
-	display: block;
 }
 
 .dropdown:hover .dropbtn {
@@ -2148,7 +2149,11 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 	}
 
 	.dropdown-content {
-		width: 169px;
+		width: 180px;
+	}
+
+	.search-container {
+		margin-left: 130px;
 	}
 }
 
@@ -2159,15 +2164,11 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 
 	.dropbtn {
 		width: 350px;
-		font-size: 13px;
+		font-size: 18px;
 	}
 
 	.dropdown-content {
 		width:350px;
-	}
-
-	.dropdown:hover > .dropdown-content {
-		display: none;
 	}
 
 	.dropdown-content {

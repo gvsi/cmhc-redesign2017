@@ -75,7 +75,7 @@
 
 <div class="row row-top-grey2" id="mobile-search-container" style="display:none;height:100px;">
 	<center>
-		<div class="cse-branding-bottom search-container">  
+		<div class="cse-branding-bottom">  
 			<form name="cse_searchbox" action="https://cmhc.utexas.edu/search.html" method="get" id="cse_searchbox_mobile"> 
 				<input type="hidden" name="cx" value="011526861309857669012:ptgfi3yl6li" /> 
 				<input type="hidden" name="cof" value="FORID:11" />
@@ -559,16 +559,6 @@
 </body>
 
 <script>
-	$(".dropbtn").click(function() {
-		$(this).next(".dropdown-content").toggle();
-		if ($(this).find(".fa-angle-double-down").is(":visible")) {
-			$(this).find(".fa-angle-double-up").show();
-			$(this).find(".fa-angle-double-down").hide();
-		} else if ($(this).find(".fa-angle-double-up").is(":visible")) {
-			$(this).find(".fa-angle-double-up").hide();
-			$(this).find(".fa-angle-double-down").show();
-		}
-	});
 
 	$(".submenubtn").click(function(e) {
 		e.preventDefault();
@@ -582,6 +572,53 @@
 	});
 
 	(function($, viewport){
+		$(".dropbtn").hover(function() {
+			if (viewport.is('lg')) {
+				$(this).next(".dropdown-content").show();
+			}
+		}, function() {
+			if (viewport.is('lg')) {
+				if (!$(this).next(".dropdown-content").is(":hover")) {
+					$(this).next(".dropdown-content").hide();
+				}
+			}
+		});
+
+		$(".dropdown-content").hover(function () {
+
+		}, function() {
+			if (viewport.is('lg') && !$(this).hasClass('sub-dropdown-content')) {
+				$(this).hide();
+			}
+		});
+
+		$(".dropbtn").click(function() {
+			if (viewport.is('<lg')) {
+				var isShow = false;
+				if (!$(this).next(".dropdown-content").is(":visible")) {
+					isShow = true;
+				}
+
+				$(".dropdown-content").hide();
+
+				if (isShow) {
+					$(this).next(".dropdown-content").show();
+				}
+
+				if (viewport.is('xs')) {
+					$(this).parent().parent().parent().find(".fa-angle-double-down").show();
+					$(this).parent().parent().parent().find(".fa-angle-double-up").hide();
+
+					if ($(this).next(".dropdown-content").is(":visible")) {
+						$(this).find(".fa-angle-double-up").show();
+						$(this).find(".fa-angle-double-down").hide();
+					} else {
+						$(this).find(".fa-angle-double-up").hide();
+						$(this).find(".fa-angle-double-down").show();
+					}
+				}
+			}
+		});
 
 		// Execute code each time window size changes
 		$(window).resize(
