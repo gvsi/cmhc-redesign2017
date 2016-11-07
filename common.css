@@ -53,6 +53,25 @@
 	 
     }
     
+     .row-content{
+     background-color: #FFFFFF;
+	 text-align:left;
+	 margin-top:20px;
+	 margin-left:35px;
+	 margin-right:20px;
+	 
+    }
+    
+    
+    .row-desktopcontent{
+     background-color: #FFFFFF;
+	 text-align:left;
+	 margin-top:30px;
+	 margin-left:20px;
+	 margin-right:20px;
+	 
+    }
+    
      .row-blue{
      background-color: #1b2a39;
 	 text-align:left;
@@ -692,26 +711,26 @@
 	 }
 	 
 	 .custom8{
-	 	color:grey;
-	    font-size:11px;
-	 	letter-spacing: 0.10ex;
-	 	margin-top:12px;
-		text-align:left;
+	 	color:black;
+	 	text-align:left;
+	 	font-size:11px;
+	 	font-weight:lighter;
+	 	margin-top:14px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
 	 .custom9{
-	 	color:white;
-	 	text-align:center;
-	 	font-size:11px;
+	 	color:black;
+	 	text-align:left;
+	 	font-size:15px;
 	 	font-weight:lighter;
-	 	margin-top:10px;
+	 	margin-top:23px;
 	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	 }
 	 
 	 
 	/* columns */ 
-	.col-general-mobile{
-     background-color: #1b2a39;
+	.col-desktopgeneral{
+     margin-top:50px;
     }
     
     .col-vav-mobile{
@@ -1194,7 +1213,7 @@ width: 200px;
 }
 
 /*Setting general text attributes*/
-span.bodytext {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 24px; color: #000000}
+span.bodytext {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 26px; color: #000000}
 
 
 /*Setting general homepage text attributes*/
@@ -1207,6 +1226,8 @@ span.bodytext2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size:
 span.homepageheader {  font-family: Arial, Helvetica, sans-serif; font-size: 53px; line-height: 50px; color: #000000}
 
 span.homepageheader_groups {  font-family: Arial, Helvetica, sans-serif; font-size: 41px; line-height: 50px; color: #244479}
+
+span.homepageheader_groupsdesktop {  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 50px; line-height: 60px; color: #999999}
 
 span.homepageheader_groups2 {  font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 25px; color: #000000}
 
