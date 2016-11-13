@@ -182,10 +182,15 @@
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/counseling_resources.html"class="a_class_dropdown">Off-campus counseling / mental health resources</a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/presentations.html"class="a_class_dropdown">Request a presentation</a>
 					<a href="https://www.cmhc.utexas.edu/stressrecess/index.html"class="a_class_dropdown">Stress Recess</a>
-					<div class="submenubtn"><a href="https://test.cmhc.utexas.edu/REDESIGN2017/commonconcerns.html"><b>List of common student concerns </b> <i class="fa fa-angle-double-down" aria-hidden="true"></i> <i class="fa fa-angle-double-up" style="display:none" aria-hidden="true"></i>
-					</a>
-                        <div class="dropdown-content sub-dropdown-content">
-                            <a href="https://test.cmhc.utexas.edu/REDESIGN2017/alcoholdrugs.html"class="a_class_dropdown">Alcohol & Drugs</a>
+					<div>
+						<div class="submenubtn">
+							<a href="#"><b>List of common student concerns</b>
+								<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-double-up" style="display:none" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="dropdown-content sub-dropdown-content">
+							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/alcoholdrugs.html"class="a_class_dropdown">Alcohol & Drugs</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/anger.html"class="a_class_dropdown">Anger</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/anxiety.html"class="a_class_dropdown">Anxiety</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/assertiveness.html"class="a_class_dropdown">Assertiveness</a>
@@ -214,8 +219,8 @@
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/testanxiety.html"class="a_class_dropdown">Test Anxiety</a>
 							<a href="http://ugs.utexas.edu/slc/study/time-goals"class="a_class_dropdown">Time Management</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/veterans.html"class="a_class_dropdown">Veteran's Issues</a>
-                        </div>
-                    </div>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
@@ -261,104 +266,78 @@
 </div>
 
 <script>
-    $(".submenubtn").click(function(e) {
-        e.preventDefault();
-        $(this).find(".sub-dropdown-content").toggle();
-        $(this).find(".fa-angle-double-up").toggle();
-        $(this).find(".fa-angle-double-down").toggle();
-    });
 
-    (function($, viewport){
-        $(".dropbtn").hover(function() {
-            if (viewport.is('lg')) {
-                $(this).next(".dropdown-content").show();
-            }
-        }, function() {
-            if (viewport.is('lg')) {
-                if (!$(this).next(".dropdown-content").is(":hover")) {
-                    $(this).next(".dropdown-content").hide();
-                }
-            }
-        });
+	$(".submenubtn").click(function(e) {
+		console.log("heu");
+		e.preventDefault();
+		$(this).next(".sub-dropdown-content").toggle();
+		$(this).find(".fa-angle-double-up").toggle();
+		$(this).find(".fa-angle-double-down").toggle();
+	});
 
-        $(".dropdown-content").hover(function () {
+	$("#mobile-search-btn").click(function(e) {
+		$("#mobile-search-container").toggle();
+	});
 
-        }, function() {
-            if (viewport.is('lg') && !$(this).hasClass('sub-dropdown-content')) {
-                $(this).hide();
-            }
-        });
+	(function($, viewport){
+		$(".dropbtn").hover(function() {
+			if (viewport.is('lg')) {
+				$(this).next(".dropdown-content").show();
+			}
+		}, function() {
+			if (viewport.is('lg')) {
+				if (!$(this).next(".dropdown-content").is(":hover")) {
+					$(this).next(".dropdown-content").hide();
+				}
+			}
+		});
 
-        $(".dropbtn").click(function() {
-            if (viewport.is('<lg')) {
-                var isShow = false;
-                if (!$(this).next(".dropdown-content").is(":visible")) {
-                    isShow = true;
-                }
+		$(".dropdown-content").hover(function () {
 
-                $(".dropdown-content").hide();
+		}, function() {
+			if (viewport.is('lg') && !$(this).hasClass('sub-dropdown-content')) {
+				$(this).hide();
+			}
+		});
 
-                if (isShow) {
-                    $(this).next(".dropdown-content").show();
-                }
+		$(".dropbtn").click(function() {
+			if (viewport.is('<lg')) {
+				var isShow = false;
+				if (!$(this).next(".dropdown-content").is(":visible")) {
+					isShow = true;
+				}
 
-                if (viewport.is('xs')) {
-                    $(this).parent().parent().parent().find(".fa-angle-double-down").show();
-                    $(this).parent().parent().parent().find(".fa-angle-double-up").hide();
+				$(".dropdown-content").hide();
 
-                    if ($(this).next(".dropdown-content").is(":visible")) {
-                        $(this).find(".fa-angle-double-up").show();
-                        $(this).find(".fa-angle-double-down").hide();
-                    } else {
-                        $(this).find(".fa-angle-double-up").hide();
-                        $(this).find(".fa-angle-double-down").show();
-                    }
-                }
-            }
-        });
+				if (isShow) {
+					$(this).next(".dropdown-content").show();
+				}
 
-        $(document).ready(function() {
-            if(viewport.is('xs')) {
-                $("#navbar").hide();
-            }
-        });
+				if (viewport.is('xs')) {
+					$(this).parent().parent().parent().find(".fa-angle-double-down").show();
+					$(this).parent().parent().parent().find(".fa-angle-double-up").hide();
 
-        $("#mobile-search-btn").click(function(e) {
-            if( viewport.is('xs') ) {
-                if ($("#mobile-info-navbar").is(":visible")) {
-                    $("#mobile-info-navbar").hide();
-                } else {
-                    $("#mobile-info-navbar").show();
-                }
+					if ($(this).next(".dropdown-content").is(":visible")) {
+						$(this).find(".fa-angle-double-up").show();
+						$(this).find(".fa-angle-double-down").hide();
+					} else {
+						$(this).find(".fa-angle-double-up").hide();
+						$(this).find(".fa-angle-double-down").show();
+					}
+				}
+			}
+		});
 
-                if ($("#mobile-search-container").is(":visible")) {
-                    $("#mobile-search-container").hide();
-                } else {
-                    $("#mobile-search-container").show();
-                }
+		// Execute code each time window size changes
+		$(window).resize(
+				viewport.changed(function() {
+					// Executes only in XS breakpoint
+					if( viewport.is('>xs') ) {
+						$("#mobile-search-container").hide();
+					}
+				}, 300)
+		);
 
-                if ($("#navbar").is(":visible")) {
-                    $("#navbar").hide();
-                } else {
-                    $("#navbar").show();
-                }
-            }
-        });
+	})(jQuery, ResponsiveBootstrapToolkit);
 
-        // Execute code each time window size changes
-        $(window).resize(
-                viewport.changed(function() {
-                    // Executes only in XS breakpoint
-                    if( viewport.is('>xs') ) {
-                        $("#mobile-info-navbar").hide();
-                        $("#mobile-search-container").hide();
-                        $("#navbar").show();
-                    } else {
-                        $("#navbar").hide();
-                    }
-
-                }, 150)
-        );
-
-    })(jQuery, ResponsiveBootstrapToolkit);
 </script>

@@ -69,8 +69,6 @@
 			</form>
 		</div> 
 
-
-
 	</div><!-- (this ends the container-fluid tag) -->
 
 </div><!-- (this ends the row-top-grey tag) -->
@@ -226,8 +224,13 @@
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/counseling_resources.html"class="a_class_dropdown">Off-campus counseling / mental health resources</a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/presentations.html"class="a_class_dropdown">Request a presentation</a>
 					<a href="https://www.cmhc.utexas.edu/stressrecess/index.html"class="a_class_dropdown">Stress Recess</a>
-					<div class="submenubtn"><a href="https://test.cmhc.utexas.edu/REDESIGN2017/commonconcerns.html"><b>List of common student concerns </b> <i class="fa fa-angle-double-down" aria-hidden="true"></i> <i class="fa fa-angle-double-up" style="display:none" aria-hidden="true"></i>
-					</a>
+					<div>
+						<div class="submenubtn">
+							<a href="#"><b>List of common student concerns</b>
+							<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+							<i class="fa fa-angle-double-up" style="display:none" aria-hidden="true"></i>
+							</a>
+						</div>
 						<div class="dropdown-content sub-dropdown-content">
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/alcoholdrugs.html"class="a_class_dropdown">Alcohol & Drugs</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/anger.html"class="a_class_dropdown">Anger</a>
@@ -574,8 +577,9 @@
 <script>
 
 	$(".submenubtn").click(function(e) {
+		console.log("heu");
 		e.preventDefault();
-		$(this).find(".sub-dropdown-content").toggle();
+		$(this).next(".sub-dropdown-content").toggle();
 		$(this).find(".fa-angle-double-up").toggle();
 		$(this).find(".fa-angle-double-down").toggle();
 	});
