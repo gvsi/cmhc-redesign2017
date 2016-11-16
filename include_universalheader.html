@@ -148,6 +148,9 @@
 				</table>
 			</center>
 		</div>
+	</div>
+
+	<div id="navbar">
 		<div class="col-xs-12 col-sm-3 custom3 ">
 			<div class="dropdown">
 				<button class="dropbtn">Help With A Crisis <i class="fa fa-angle-double-down" aria-hidden="true"></i> <i class="fa fa-angle-double-up" style="display:none "aria-hidden="true"></i></button>
@@ -249,12 +252,11 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="col-xs-12 visible-xs">
-	<a href="index.html"><center><img src="images/universal/cmhcbranding_mobile.png" class="img-responsive" alt="cmhc.utexas.edu" border="0" vspace="0" align="middle" /></center></a>
+	<div class="col-xs-12 visible-xs">
+		<a href="index.html"><center><img src="images/universal/cmhcbranding_mobile.png" class="img-responsive" alt="cmhc.utexas.edu" border="0" vspace="0" align="middle" /></center></a>
+	</div>
 </div>
-
 <script>
 
 	$(".submenubtn").click(function(e) {
@@ -344,6 +346,9 @@
 					if( viewport.is('>xs') ) {
 						$("#mobile-search-container").hide();
 						$("#mobile-info-navbar").hide();
+						$("#navbar").show();
+					} else {
+						$("#navbar").hide();
 					}
 				}, 300)
 		);
