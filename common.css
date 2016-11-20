@@ -476,8 +476,8 @@
      	background-color:transparent;
      	border-color:transparent;
      	font-size: 18px;
-     	color: #283f56;
-  		line-height: .8;
+     	color: #000000;
+  		line-height: -.4;
 		display: block;
  		width: 100%;
      }
@@ -486,7 +486,7 @@
 	 .btn-info-desktop:active,
 	 .btn-info-desktop.active,
 	 .open .dropdown-toggle.btn-info-desktop{
-	    color: #283f56;
+	    color: #bf5700;
 	    background-color: transparent;
 	    border-color: transparent;
 	 }
@@ -752,7 +752,7 @@
    }
    .col-xs-12-charges{
      height: 45px;
-     background-color: #9abee4;
+     background-color: #e9ecee;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: left;
@@ -800,8 +800,8 @@
    }
    
    .col-xs-12-desktop{
-     height: 30px;
-     background-color: #d0d8e2;
+     height: 40px;
+     background-color: #e9ecee;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: left;
