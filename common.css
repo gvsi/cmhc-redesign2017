@@ -56,21 +56,16 @@
      .row-content{
      background-color: #FFFFFF;
 	 text-align:left;
-	 margin-top:20px;
-	 margin-left:35px;
-	 margin-right:20px;
-	 
-    }
-    
-    
-    .row-desktopcontent{
-     background-color: #FFFFFF;
-	 text-align:left;
-	 margin-top:30px;
 	 margin-left:20px;
 	 margin-right:20px;
 	 
     }
+    
+    .top-buffer { 
+    margin-top:60px;
+    
+    }
+    
     
      .row-blue{
      background-color: #1b2a39;
@@ -324,7 +319,7 @@
      	background-color:transparent;
      	border-color:transparent;
      	font-family:"Helvetica Neue", Helvetica, Verdana, Arial, sans-serif !important;
-     	color: #ffffff;
+     	color: #000000;
 		font-weight: normal;
      	font-size: 16px;
   		line-height: 1.428571429;
@@ -335,7 +330,7 @@
 	 .btn-info-small:focus,
 	 .btn-info-small:active,
 	 .open .dropdown-toggle.btn-info-small{
-	    color: #ffffff;
+	    color: #000000;
 	    background-color: transparent;
 	    border-color: transparent;
 	 }
@@ -757,7 +752,7 @@
    }
    .col-xs-12-charges{
      height: 45px;
-     background-color: #476b91;
+     background-color: #9abee4;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: left;
@@ -817,8 +812,8 @@
   
    
    .col-xs-12-audio{
-     height: 40px;
-     background-color: #d0d8e2;
+     height: 45px;
+     background-color: #e3e4e5;
      color: white;
      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
      text-align: left;

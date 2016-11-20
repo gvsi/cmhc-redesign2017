@@ -340,18 +340,22 @@
 		});
 
 		// Execute code each time window size changes
-		$(window).resize(
-				viewport.changed(function() {
-					// Executes only in XS breakpoint
-					if( viewport.is('>xs') ) {
-						$("#mobile-search-container").hide();
-						$("#mobile-info-navbar").hide();
-						$("#navbar").show();
-					} else {
-						$("#navbar").hide();
-					}
-				}, 300)
-		);
+		$(window).resize(function() {
+			if (viewport.is('>xs')) {
+				$("#mobile-search-container").hide();
+				$("#mobile-info-navbar").hide();
+				$("#navbar").show();
+			} else {
+				if (!$("#mobile-search-container").is(":visible"))
+					$("#navbar").hide();
+			}
+		});
+
+		$( document ).ready(function() {
+			if( viewport.is('xs') ) {
+				$("#navbar").hide();
+			}
+		});
 
 	})(jQuery, ResponsiveBootstrapToolkit);
 
