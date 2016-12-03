@@ -1,0 +1,1408 @@
+/*Media Queries*/
+@media (min-width: 768px){
+    body {
+	margin-top: 0px;
+	background: url(images/vav_background.png);
+	background-repeat:repeat-x;
+	background-color:#FFFFFF
+   }
+}
+/*VIDEOS*/
+/*	Usage Example:
+	<section class="row">
+  <div class="span6">
+    <div class="flex-video widescreen"><iframe src="https://www.youtube-nocookie.com/embed/..." frameborder="0" allowfullscreen=""></iframe></div>
+  </div>
+  <div class="span6">
+    ...
+  </div>
+</section>*/
+	.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+	
+	.container-fluid {
+  	 margin-right: auto;
+ 	 margin-left: auto;
+ 	 max-width: 1000px; /* or 950px */
+	}
+	
+    /* ROWS  */
+	 .row-general{
+     background-color: #FFFFFF;
+	 text-align:left;
+	 margin-top:1px;
+	 margin-left:1px;
+	 margin-right:1px;
+	 
+    }
+	 .row-general-mobile{
+     background-color: #000000;
+    }
+    .row-top-grey{
+    	background: url("http://www.cmhc.utexas.edu/images/universal/topgreybackground.gif");
+    	text-align:center;
+    }
+   .row-top-orange{
+     background: url("http://www.cmhc.utexas.edu/images/universal/toporangebackground.gif");
+     text-align: center;
+   }
+   .row-nav-vav{
+     background: url("http://www.cmhc.utexas.edu/images/universal/vav_universalnavbackground.gif");
+     text-align: center;
+   }
+   .row-prom-space{
+		text-align:center;
+		background-color: #666666;
+		
+   }
+   .row-pprom-space{
+		text-align:center;
+    	padding:4px;
+    	margin-top:4px;
+   }
+   .row-normal-space{
+     text-align: center;
+   }
+   .row-background-space{
+     text-align: center;
+     background-color: #000000;
+    
+   }
+   .row-nested-space{
+     text-align: left;
+     padding:4px;
+     
+   }
+    .row-maphome{
+    	border:5px solid black;
+    	height:150px;
+    }
+    
+    .row-videos{
+    	background: url("IMAGES/watchbackground.png");
+    	height:165px;
+    	width:288px;
+		margin-top:10px;
+		margin-left:1px;
+		background-repeat:none;
+    }
+	.row-videos-small{
+		width:240px;
+		margin-top:20px;
+	}
+	.row-video-align{
+     text-align: center;
+     padding:4px;
+	 margin-left:1px;
+   }
+	
+     .row-social-media{
+    	background: url("http://www.cmhc.utexas.edu/IMAGES/socialmediabackground.png");
+    	text-align:center;
+    	
+    }
+    
+    
+    .row-social-mediainclude{
+    	background: url("http://www.cmhc.utexas.edu/IMAGES/socialmediabackgroundinclude.png");
+    	text-align:center;
+    }
+    
+     .row-bottom-footer{
+    	background: url("http://www.cmhc.utexas.edu/IMAGES/bottomfooter.png");
+    	text-align:center;
+		background-color:#000;
+    }
+    
+     .row-large-navigation{
+    	background: url("http://www.cmhc.utexas.edu/IMAGES/navigationbackground.png");
+    background-color:#000;	
+      }
+      
+
+      
+    
+    /* IMages Centered*/	
+	img.centered {display:block; margin-left: auto; margin-right: auto;}
+    /* BUTTTONS  */
+    .btn-info{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 14px;
+     	color: #FFFFFF;
+     	letter-spacing: 0.10ex;
+  		font-weight: bold;
+  		line-height: 1.428571429;
+     }
+     .btn-info:hover,
+	 .btn-info:focus,
+	 .btn-info:active,
+	 .btn-info.active,
+	 .open .dropdown-toggle.btn-info{
+	    color: #ffffff;
+	    background-color: transparent;
+	    border-color: transparent;
+	 }
+	.btn-info:active,
+	.btn-info.active,
+	.open .dropdown-toggle.btn-info {
+	  background-image: none;
+	}
+	
+	.btn-info-small{
+     	background-color:transparent;
+     	border-color:transparent;
+     	color: #ffffff;
+		font-weight: bold;
+     	font-size: 16px;
+  		line-height: 1.428571429;
+     }
+     .btn-info-small:hover,
+	 .btn-info-small:focus,
+	 .btn-info-small:active,
+	 .btn-info-small.active,
+	 .open .dropdown-toggle.btn-info-small{
+	    color: #ffffff;
+	    background-color: transparent;
+	    border-color: transparent;
+	 }
+	.btn-info-small:active,
+	.btn-info-small.active,
+	.open .dropdown-toggle.btn-info-small{
+	  background-image: none;
+	}
+	
+	 .btn-info-main{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 20px;
+     	color: #ffffff;
+  		line-height: 1.428571429;
+		display: block;
+ 		width: 100%;
+     }
+     .btn-info-main:hover,
+	 .btn-info-main:focus,
+	 .btn-info-main:active,
+	 .btn-info-main.active,
+	 .open .dropdown-toggle.btn-info-main{
+	    color: #ffffff;
+	    background-color: transparent;
+	    border-color: transparent;
+	 }
+	.btn-info-main:active,
+	.btn-info-main.active,
+	.open .dropdown-toggle.btn-info-main {
+	  background-image: none;
+	}
+	
+	
+	.btn-info-charges{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 16px;
+     	color: #ffffff;
+  		line-height: 1.428571429;
+		display: block;
+ 		width: 100%;
+     }
+     .btn-info-charges:hover,
+	 .btn-info-charges:focus,
+	 .btn-info-charges:active,
+	 .btn-info-charges.active,
+	 .open .dropdown-toggle.btn-info-main{
+	    color: #ffffff;
+	    background-color: transparent;
+	    border-color: transparent;
+	 }
+	.btn-info-charges:active,
+	.btn-info-charges.active,
+	.open .dropdown-toggle.btn-info-main {
+	  background-image: none;
+	}
+	
+	
+	.btn-info-staff{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 16px;
+     	color: #ffffff;
+  		line-height: 1.428571429;
+		display: block;
+ 		width: 100%;
+     }
+     .btn-info-staff:hover,
+	 .btn-info-staff:focus,
+	 .btn-info-staff:active,
+	 .btn-info-staff.active,
+	 .open .dropdown-toggle.btn-info-main{
+	    color: #ffffff;
+	    background-color: transparent;
+	    border-color: transparent;
+	 }
+	.btn-info-staff:active,
+	.btn-info-staff.active,
+	.open .dropdown-toggle.btn-info-main {
+	  background-image: none;
+	}
+	
+
+	/* IMAGES  */
+	.img-responsive{vertical-align:middle; min-height:50px; min-width:50px;}
+	.img{vertical-align:top}
+	
+	/* custom  */
+	  .custom_padding{
+		  padding:5px;}
+		  
+	 .custom{
+	 	height:50px;
+	 }
+	 
+	 .custom3{
+	 	color:white;
+	 	text-align:center;
+	 	font-size:8px;
+	 	font-weight:bold;
+	 	margin-top:4px;
+  		line-height: 1.428571429;
+	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	 }
+	  .custom4{
+	 	color:white;
+	 	text-align:right;
+	 	font-size:11px;
+	 	font-weight:light;
+	 	margin-top:10px;
+	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	 }
+	 .custom5{
+	 	color:white;
+	 	text-align:left;
+	 	font-size:11px;
+	 	font-weight:light;
+	 	margin-top:10px;
+	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	 }
+	 .custom6{
+	 	color:white;
+	    font-size:13px;
+	 	letter-spacing: 0.10ex;
+	 	margin-top:10px;
+		text-align:left;
+	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	 }
+	 
+	 .custom7{
+	 	color:white;
+	    font-size:11px;
+	 	letter-spacing: 0.10ex;
+	 	margin-top:12px;
+		text-align:left-horizontal;
+	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	 }
+	 
+	 .custom8{
+	 	color:grey;
+	    font-size:11px;
+	 	letter-spacing: 0.10ex;
+	 	margin-top:12px;
+		text-align:left-horizontal;
+	 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	 }
+	 
+	 
+	/* columns */ 
+	.col-general-mobile{
+     background-color: #000000;
+    }
+	.col-sm-12-prom-space{
+		display:block;
+		width:100%;	
+ 		.box-sizing(border-box); // Makes inputs behave like true block-level elements
+	}
+	.col-xs-12-prom-space{
+		display:block;
+		width:100%;
+ 		 .box-sizing(border-box); // Makes inputs behave like true block-level elements
+	}
+	
+	.col-xs-12-appointments{
+     height: 50px;
+     background-color: #0066ff;
+     color: white;
+     font-size:20px;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+     text-align: left-horizontal;
+     padding:11px;
+     margin-top:4px;
+   }
+   .col-xs-12-charges{
+     height: 50px;
+     background-color: #0066ff;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+     text-align: left-horizontal;
+     padding:11px;
+     /* 
+     border:5px solid black; */
+   }
+   
+   .col-xs-12-chargesparents{
+     height: 50px;
+     background-color: #0066ff;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+     text-align: left-horizontal;
+     padding:11px;
+     margin-top:4px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-nurse{
+     height: 50px;
+     background-color: #0066ff;
+     color: white;
+     text-align: left-horizontal;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-short-nav{
+     /* //height: 216px; */
+     background-color: #000000;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: left-horizontal;
+     padding:6px;
+     margin-bottom:4px;/*
+     /*border:5px solid black; */
+   }
+   .col-xs-12-parents{
+     height: 78px;
+     background-color: #003366;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-parents-small{
+     height: 50px;
+     background-color: #003366;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-meningococcal{
+     height: 78px;
+     background-color: #003366;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:2px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-infoforparents{
+     height: 78px;
+     background-color: #003366;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:2px;
+     margin-top:4px;
+     /* 
+     border:5px solid black; */
+   }
+   .col-xs-12-meningococcal-small{
+     height: 50px;
+     background-color: #003366;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-myuhs{
+     height: 78px;
+     background-color: #003366;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:2px;
+     margin-top:4px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-myuhs-small{
+     height: 50px;
+     background-color: #003366;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-emergencies{
+     height: 50px;
+     background-color: #BF5700;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-meetthestaff{
+     height: 80px;
+     background-color: #BF5700;
+     color: white;
+     font-weight: bold;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center; 
+     padding:5px;/* 
+     border:5px solid black; */
+   }
+   
+   
+   .col-xs-12-meetthestaff2{
+     height: 80px;
+     background-color: #BF5700;
+     color: white;
+     font-weight: bold;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center; 
+     padding:5px;
+     margin-top:4px;/* 
+     border:5px solid black; */
+   }
+   
+   .col-xs-12-takeatour{
+     height: 78px;
+     background-color: #BF5700;
+     color: white;
+     font-weight: bold;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center; 
+     padding:5px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-health-promotion{
+   	 height:50px;
+     background-color: #BF5700;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   .col-xs-12-orange{
+   	 height:50px;
+     background-color: #BF5700;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     letter-spacing: +0.09ex;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   
+   
+    .col-xs-12-vavturq{
+   	 height:50px;
+     background-color: #0c9ba5;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     letter-spacing: +0.09ex;
+     padding:11px;/* 
+     border:5px solid black; */
+   }
+   
+   
+   .col-xs-12-greystaff{
+   	 height:40px;
+     background-color: #666666;
+     color: white;
+     font-size:15px;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:8px;/* 
+     border:5px solid black; */
+   }
+   
+      .col-xs-12-facebook{
+   	 height:50px;
+     background-color: #cc6600;
+     color: white;
+     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+     text-align: center;
+     padding:5px;
+     margin-bottom:4px;/* 
+     border:5px solid black; */
+   }
+
+   
+   /*Fonts:*/
+		 .btn-green{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 16px;
+     	color: #cccc99;
+  		line-height: 21px;
+     }
+     .btn-green:hover,
+	 .btn-green:focus,
+	 .btn-green:active,
+	 .btn-green.active,
+	 .open .dropdown-toggle.btn-green{
+	    color: #efefd2;
+	    background-color: transparent;
+	    border-color: transparent;
+		text-decoration:underline;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	 }
+	.btn-green:active,
+	.btn-green.active,
+	.open .dropdown-toggle.btn-green {
+	  background-image: none;
+	}
+	.btn-orange{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 16px; line-height: 21px; color: #f0a441;
+     }
+     .btn-orange:hover,
+	 .btn-orange:focus,
+	 .btn-orange:active,
+	 .btn-orange.active,
+	 .open .dropdown-toggle.btn-orange{
+	    color: #f0bd41;
+	    background-color: transparent;
+	    border-color: transparent;
+		text-decoration:underline;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	 }
+	 
+	 .btn-blue{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 16px; line-height: 21px; color: #9dbdfe;
+     }
+     .btn-blue:hover,
+	 .btn-blue:focus,
+	 .btn-blue:active,
+	 .btn-blue.active,
+	 .open .dropdown-toggle.btn-blue{
+	    color: #9dbdfe;
+	    background-color: transparent;
+	    border-color: transparent;
+		text-decoration:underline;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	 }
+	 
+	.btn-green:active,
+	.btn-green.active,
+	.open .dropdown-toggle.btn-green {
+	  background-image: none;
+	}
+	
+	.class-footer{
+     	background-color:transparent;
+     	border-color:transparent;
+		font-size: 12px; line-height: 12px; letter-spacing: 0.25ex; color: #cbcdd5;
+     }
+     .class-footer:hover,
+	 .class-footer:focus,
+	 .class-footer:active,
+	 .class-footer.active,
+	 .open .dropdown-toggle.class-footer{
+	    color: #ffffff;
+	    background-color: transparent;
+	    border-color: transparent;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	 }
+	.class-footer:active,
+	.class-footer.active,
+	.open .dropdown-toggle.class-footer {
+	  background-image: none;
+	}
+	
+	.class-footerinclude{
+     	background-color:transparent;
+     	border-color:transparent;
+		font-size: 12px; line-height: 12px; letter-spacing: 0.25ex; color: #1c49a1;
+     }
+     .class-footerinclude:hover,
+	 .class-footerinclude:focus,
+	 .class-footerinclude:active,
+	 .class-footerinclude.active,
+	 .open .dropdown-toggle.class-footerinclude{
+	    color: #cc6600;
+	    background-color: transparent;
+	    border-color: transparent;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	 }
+	.class-footerinclude:active,
+	.class-footerinclude.active,
+	.open .dropdown-toggle.class-footerinclude {
+	  background-image: none;
+	}
+	
+/*OLD CSS*/	
+.home-text{
+     	background-color:transparent;
+     	border-color:transparent;
+     	font-size: 12px; line-height: 17px; letter-spacing: 0.10ex; color: #cbcdd5;
+     }
+.homewhite { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 18px; color: #ffffff; text-align:left-horizontal;}
+.homewhite2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 23px; line-height: 18px; color: #ffffff; text-align:left-horizontal;}
+.homegrey { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 17px; color: #BF5700; text-align:left-horizontal;letter-spacing: +0.03ex;}
+.homeorange { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 21px; color: #f0a441; }
+.homegreen { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 15px; color: #99cc66; }
+.homegray { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #333333; letter-spacing: +0.10ex;}
+
+#skip {
+position:absolute;
+left: -3000px;
+width: 200px;
+}
+
+/*Setting general text attributes*/
+span.bodytext {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 24px; color: #000000}
+
+
+/*Setting general text attributes*/
+span.bodytext2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 17px; color: #000000}
+
+
+
+/*Setting general text attributes*/
+span.bodytext_2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10.3px; line-height: 14px; color: #000000}
+
+
+/*Setting vav turquoise letters*/
+span.bodytext_turq {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 18px; line-height: 22px; font-weight: lighter; letter-spacing: -0.03ex; color: #125554}
+
+/*Setting general text attributes*/
+span.bodytext_3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10.3px; line-height: 14px; color: #666666}
+
+
+/*Setting general text attributes*/
+span.bodytext_red {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11.3px; line-height: 15px; color: #993300}
+
+/*Setting general text attributes*/
+span.bodytext_red2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px; color: #993300}
+
+/*Setting orange letters*/
+span.bodytext_greensm {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 14px; line-height: 18px;  font-weight: lighter; letter-spacing: -0.08ex; color: #336633}
+
+/*Setting general greyed out*/
+span.bodytext_grey {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11.3px; line-height: 15px; color: #CCCCCC}
+
+/*Setting general text attributes*/
+span.bodytextsmall {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; line-height: 11px; color: #000000}
+
+/*Setting general text attributes*/
+span.bodytextsmall3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; letter-spacing: 0.08ex; color: #000000}
+
+/*Setting general text attributes*/
+span.bodytextsmall2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; line-height: 13px; letter-spacing: 0.10ex; color: #666666}
+
+/*Setting general text attributes*/
+span.bodytext_headerwhite {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 30px; line-height: 30px; font-weight: lighter; letter-spacing: -0.05ex; font-weight: medium; color: #FFFFFF}
+
+
+span.whitetext {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; color: #FFFFFF}
+
+/*Setting orange letters*/
+span.bodytext_orange {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; line-height: 15px; color: #a15204}
+
+/*Setting orange letters*/
+span.bodytext_orange2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #BF5700}
+
+/*Setting orange letters*/
+span.bodytext_orange3 {  font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 18px; color: #BF5700}
+
+/*Setting orange letters*/
+span.bodytext_orange4 {  font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 20px; color: #BF5700}
+
+/*Setting orange letters*/
+span.bodytext_orange5 {  font-family: Arial, Helvetica, sans-serif; font-size: 27px; line-height: 30px; color: #BF5700}
+
+/*Setting orange letters*/
+span.bodytext_blue4 {  font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 30px; color: #1c49a1}
+
+/*Setting orange letters*/
+span.bodytext_blue5 {  font-family: Arial, Helvetica, sans-serif; font-size: 17px; line-height: 22px; color: #1c49a1}
+
+/*Setting orange letters*/
+span.bodytext_grey3 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 25px; line-height: 28px; letter-spacing: -0.05ex; font-weight: lighter; color: #666666}
+
+/*Setting orange letters*/
+span.bodytext_grey2 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.5px; line-height: 16px; letter-spacing: -0.05ex; font-weight: lighter; color: #666666}
+
+/*Setting orange letters*/
+span.bodytext_grey3 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 13.5px; line-height: 22px; letter-spacing: -0.01ex; font-weight: lighter; color: #666666}
+
+
+/*Setting orange letters*/
+span.bodytext_orange4 {  font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 22px; color: #a15204}
+
+
+/*Setting orange letters*/
+span.bodytext_green {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 16px; line-height: 20px;  font-weight: lighter; letter-spacing: -0.03ex; color: #336633}
+
+/*Setting orange letters*/
+span.bodytext_green2 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 14px; line-height: 16px;  font-weight: lighter; letter-spacing: -0.08ex; color: #a15204}
+
+/*Setting orange letters*/
+span.bodytext_red3 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 20px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.10ex; color: #993300}
+
+/*Here is the blue link*/
+
+a:link.a_class_hlink { font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 14px; line-height: 18px; font-weight: lighter; letter-spacing: -0.03ex; vertical-align: middle; color: #3a4587 }
+
+a:visited.a_class_hlink {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 14px; line-height: 18px; font-weight: lighter; letter-spacing: -0.03ex; vertical-align: middle; color: #3a4587}
+
+a:hover.a_class_hlink { font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 14px; line-height: 18px; font-weight: lighter; letter-spacing: -0.03ex; vertical-align: middle; color: #b06009 }
+
+
+/*Here is the in-line blue link*/
+
+a:link.a_class_tlink { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #3a4587 }
+
+a:visited.a_class_tlink {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #3a4587}
+
+a:hover.a_class_tlink { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #b06009 }
+
+
+a:link.a_class_bluelinks2 {
+	font-family: Arial, Helvetica, Verdana sans-serif;
+	font-size: 19px;
+	line-height: 21px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: none;
+	color: #24488e;
+}
+a:visited.a_class_bluelinks2 {
+	font-family: Arial, Helvetica, Verdana sans-serif;
+	font-size: 19px;
+	line-height: 21px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: none;
+	color: #24488e;
+}
+a:hover.a_class_bluelinks2 {
+	font-family: Arial, Helvetica, Verdana sans-serif;
+	font-size: 19px;
+	line-height: 21px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: underline;
+	color: #CC6600;
+}
+
+a:focus.a_class_bluelinks2 {
+	font-family: Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 21px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: underline;
+	color: #24488e;
+}
+
+
+a:link.a_class_bluelinks {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: none;
+	color: #24488e;
+}
+a:visited.a_class_bluelinks {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: none;
+	color: #24488e;
+}
+a:hover.a_class_bluelinks {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: underline;
+	color: #24488e;
+}
+
+a:focus.a_class_bluelinks {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: underline;
+	color: #24488e;
+}
+
+
+
+
+a:link.a_class_link {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: none;
+	color: #24488e;
+}
+a:visited.a_class_link {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: none;
+	color: #24488e;
+}
+a:hover.a_class_link {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: underline;
+	color: #24488e;
+}
+
+a:focus.a_class_link {
+	font-family: Verdana, Arial, Helvetica, Verdana sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: lighter;
+	letter-spacing: -0.01ex;
+	text-decoration: underline;
+	color: #24488e;
+}
+
+
+
+
+
+
+/*Setting orange letters*/
+span.bodytext_greensm {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 16px; line-height: 18px;  font-weight: lighter; letter-spacing: -0.08ex; color: #336633}
+
+/*Setting orange letters*/
+span.bodytext_blacknarrow {  font-family: Arial Narrow, Arial, Helvetica, Verdana, sans-serif; font-size: 16px; line-height: 18px;  font-weight: lighter; letter-spacing: -0.08ex; color: #000000}
+
+/*Setting drop cap letter*/
+span.cap {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 18px; color: #000000}
+
+/*Setting drop cap letter*/
+span.cap2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 17px; line-height: 19px; color: #000000}
+
+/*Setting header attributes*/
+.H1 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 28px; line-height: 30px; letter-spacing: -0.05ex; font-weight: lighter; color: #888787}
+
+/*Setting large header attributes_orange*/
+.H2 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 20px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.03ex; color: #BF5700}
+
+/*Setting large header attributes_orange*/
+.H3 {  font-family: Arial, Helvetica, Verdana, sans-serif;  font-size: 14px; line-height: 20px; font-weight: lighter; letter-spacing: -0.05ex; color: #993300}
+
+/*Setting large header attributes_steps*/
+.H4 {  font-family: Arial, Helvetica, Verdana, sans-serif;  font-size: 13px; line-height: 15px; font-weight: lighter; letter-spacing: -0.05ex; color: #336633}
+
+/*Setting large header attributes_promotion*/
+.H5 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 15px; line-height: 18px; font-weight: lighter; letter-spacing: -0.03ex; vertical-align: middle; color: #666666}
+
+/*Setting large header attributes_audio*/
+.H6 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 30px;  vertical-align: middle; color: #CCCC99}
+
+/*Setting special hours*/
+.H7 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 30px;  vertical-align: middle; color: #993300}
+
+/*Setting large header attributes_orange*/
+.H8 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 16px; line-height: 20px;  font-weight: lighter; letter-spacing: -0.08ex; color: #CC6600}
+
+/*Setting header attributes - sexual health*/
+.H9 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 20px; line-height: 15px; letter-spacing: -0.05ex; font-weight: lighter; color: #999999}
+
+/*Setting header attributes version 2*/
+.H10 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 28px; line-height: 28px; font-weight: lighter; letter-spacing: -0.05ex; font-weight: medium; color: #666666}
+
+
+
+/*Here is the active link within header and footer - white*/
+#white_link {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10.5px; line-height: 12px }
+div#white_link a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+div#white_link a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+div#white_link a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+div#white_link a:focus {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+
+
+
+/*Here is the active link within the body - blue*/
+#link_link { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px; font-weight: lighter; letter-spacing: +0.01ex;   text-decoration: none; color: #003366; }
+
+div#link_link a:link  { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px; font-weight: lighter; letter-spacing: +0.01ex;   text-decoration: none; color: #003366; }
+
+div#link_link a:visited {  font-family:Arial, Helvetica, Verdana sans-serif;font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: +0.01ex;   text-decoration: none; color: #003366; }
+
+div#link_link a:hover { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: +0.01ex; color: #993300; }
+
+div#link_link a:focus { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: +0.01ex; color: #993300; }
+
+
+
+/*Here is the LEFTNAV link*/
+
+a:link.a_class_leftnav { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px; font-weight: lighter; letter-spacing: +0.01ex;   text-decoration: none; color: #1c49a1; }
+
+a:visited.a_class_leftnav {  font-family:Arial, Helvetica, Verdana sans-serif;font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: +0.01ex;   text-decoration: none; color: #1c49a1; }
+
+a:hover.a_class_leftnav { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: +0.01ex; color: #993300; }
+
+a:focus.a_class_leftnav { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: +0.01ex; color: #993300; }
+
+
+/*Here is the LEFTNAV link*/
+
+a:link.a_class_leftnav2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 16px; font-weight: lighter; text-decoration: none; color: #1c49a1; }
+
+a:visited.a_class_leftnav2 {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 16px;  font-weight: lighter; text-decoration: none; color: #1c49a1; }
+
+a:hover.a_class_leftnav2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 16px;  font-weight: bold; text-decoration: underline; color: #CC6600; }
+
+a:focus.a_class_leftnav2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 16px;  font-weight: bold; text-decoration: underline; color: #CC6600; }
+
+
+/*Here is the large blue link*/
+
+a:link.a_class_largeblue { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 18px; color: #0066CC }
+
+a:visited.a_class_largeblue {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 18px; color: #0066CC }
+
+a:hover.a_class_largeblue { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 18px; color: #0066CC text-decoration: underline; }
+
+a:focus.a_class_largeblue { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 18px; color: #0066CC text-decoration: underline; }
+
+
+
+
+
+/*Here is the HT link*/
+
+a:link.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px; font-weight: lighter; text-decoration: none; color: #a15204; }
+
+a:visited.a_class_footer {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: none; color: #a15204; }
+
+a:hover.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #a15204; }
+
+a:focus.a_class_footer { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #a15204; }
+
+
+
+/*Here is the HT link*/
+
+a:link.a_class_footer2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px; font-weight: lighter; text-decoration: none; color: #a15204; }
+
+a:visited.a_class_footer2 {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: none; color: #a15204; }
+
+a:hover.a_class_footer2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #a15204; }
+
+a:focus.a_class_footer2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 16px;  font-weight: lighter; text-decoration: underline; color: #a15204; }
+
+
+
+
+/*Here is the footer link*/
+
+a:link.a_class_largeblue2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 22px; font-weight: lighter; text-decoration: none; color: #1c49a1; }
+
+a:visited.a_class_largeblue2 {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 22px;  font-weight: lighter; text-decoration: none; color: #1c49a1; }
+
+a:hover.a_class_largeblue2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 22px;  font-weight: lighter; text-decoration: underline; color: #1c49a1; }
+
+a:focus.a_class_largeblue2 { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 22px;  font-weight: lighter; text-decoration: underline; color: #1c49a1; }
+
+
+/*Here is the internal link*/
+
+a:link.a_class_lists { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 20px; line-height: 30px; font-weight: lighter; text-decoration: none; color: #1c49a1; }
+
+a:visited.a_class_lists {  font-family: Arial, Helvetica, Verdana sans-serif; font-size: 20px; line-height: 30px;  font-weight: lighter; text-decoration: none; color: #1c49a1; }
+
+a:hover.a_class_lists { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 20px; line-height: 30px;  font-weight: lighter; color: #1c49a1; text-decoration: underline; }
+
+a:focus.a_class_lists { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 20px; line-height: 30px;  font-weight: lighter; color: #1c49a1; text-decoration: underline; }
+
+
+/*Here is the internal green link*/
+
+a:link.a_class_greenlists { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 19px; font-weight: lighter; text-decoration: none; color: #336633; }
+
+a:visited.a_class_greenlists {  font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 19px;  font-weight: lighter; text-decoration: none; color: #336633; }
+
+a:hover.a_class_greenlists { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 19px;  font-weight: lighter; color: #336633; text-decoration: underline; }
+
+a:focus.a_class_greenlists { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 16px; line-height: 19px;  font-weight: lighter; color: #336633; text-decoration: underline; }
+
+
+
+/*Here is the internal link*/
+
+a:link.a_class_anatomy { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 14px; line-height: 18px; font-weight: lighter; text-decoration: none; color: #336666; }
+
+a:visited.a_class_anatomy {  font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 14px; line-height: 18px;  font-weight: lighter; text-decoration: none; color: #336666; }
+
+a:hover.a_class_anatomy { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 14px; line-height: 18px;  font-weight: lighter; color: #336666; text-decoration: underline; }
+
+a:focus.a_class_anatomy { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 14px; line-height: 18px;  font-weight: lighter; color: #336666; text-decoration: underline; }
+
+
+
+
+/*Here is the NEWS link*/
+
+a:link.a_class_news { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 15px; font-weight: lighter; letter-spacing: -0.02ex;  text-decoration: none; color: #666666; }
+
+a:visited.a_class_news {  font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 15px;  font-weight: lighter; letter-spacing: -0.02ex;  text-decoration: none; color: #666666; }
+
+a:hover.a_class_news { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 15px;  font-weight: lighter; letter-spacing: -0.02ex; color: #666666;  text-decoration: underline; }
+
+a:focus.a_class_news { font-family: Arial Narrow, Arial, Helvetica, Verdana sans-serif; font-size: 15px; line-height: 15px;  font-weight: lighter; letter-spacing: -0.02ex; color: #666666;  text-decoration: underline; }
+
+
+
+a:link.a_class_rightlinks { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px; font-weight: lighter; letter-spacing: -0.01ex;   text-decoration: none; color: #1c49a1; }
+
+a:visited.a_class_rightlinks {  font-family:Arial, Helvetica, Verdana sans-serif;font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.01ex;   text-decoration: none; color: #1c49a1; }
+
+a:hover.a_class_rightlinks { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.01ex; color: #993300; }
+
+a:focus.a_class_rightlinks { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.01ex; color: #993300; }
+
+
+a:link.a_class_rightlinks_small { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 22px; font-weight: lighter; letter-spacing: -0.01ex;   text-decoration: none; color: #1c49a1; }
+
+a:visited.a_class_rightlinks_small {  font-family:Arial, Helvetica, Verdana sans-serif;font-size: 11px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.01ex;   text-decoration: none; color: #1c49a1; }
+
+a:hover.a_class_rightlinks_small { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.01ex; color: #993300; }
+
+a:focus.a_class_rightlinks_small { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 11px; line-height: 22px;  font-weight: lighter; letter-spacing: -0.01ex; color: #993300; }
+
+
+a:link.a_class_blue { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 18px; text-decoration: none; color: #003399; }
+
+a:visited.a_class_blue {  font-family:Arial, Helvetica, Verdana sans-serif;font-size: 13px; line-height: 18px;  text-decoration: none; color: #003399; }
+
+a:hover.a_class_blue { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 18px;  color: #003399;  text-decoration: underline; }
+
+a:focus.a_class_blue { font-family: Arial, Helvetica, Verdana sans-serif; font-size: 13px; line-height: 18px;  color: #003399;  text-decoration: underline; }
+
+
+
+
+
+/*Here is the orange link*/
+
+a:link.a_class_orange2 { font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 18px; line-height: 20px;  font-weight: lighter; letter-spacing: -0.08ex; color: #336633 }
+
+a:visited.a_class_orange2 {  font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 18px; line-height: 20px;  font-weight: lighter; letter-spacing: -0.08ex; color: #336633}
+
+a:hover.a_class_orange2 { font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 18px; line-height: 20px;  font-weight: lighter; letter-spacing: -0.08ex; color: #336633 text-decoration: underline; }
+
+a:focus.a_class_orange2 { font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 18px; line-height: 20px;  font-weight: lighter; letter-spacing: -0.08ex; color: #336633 text-decoration: underline; }
+
+
+
+/*Here is the orange link*/
+
+a:link.a_class_orange { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 20px;  font-weight: bold; color: #CC6600; }
+
+a:visited.a_class_orange {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 20px;  font-weight: bold; color: #CC6600;}
+
+a:hover.a_class_orange { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 20px; color: #CC6600; font-weight: bold; text-decoration: underline; }
+
+a:focus.a_class_orange { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 20px; color: #CC6600; font-weight: bold; text-decoration: underline; }
+
+
+
+
+.rollover a{
+   display: block;
+   text-indent: -9999px;
+   margin: auto auto auto auto;
+   cursor: pointer;
+   outline: transparent solid 0px;
+}
+
+
+#ccwh a{
+   height: 85px;
+   width: 170px; 
+   background: url('IMAGES/button_ccwh.png') no-repeat left top;
+}
+#ccwh a:hover{
+   background-position: left -85px; 
+}
+
+
+#ccsm a{
+   height: 85px;
+   width: 170px; 
+   background: url('IMAGES/button_ccsm.png') no-repeat left top;
+}
+#ccsm a:hover{
+   background-position: left -85px; 
+}
+
+
+#ccai a{
+   height: 85px;
+   width: 170px; 
+   background: url('IMAGES/button_ccai.png') no-repeat left top;
+}
+#ccai a:hover{
+   background-position: left -85px; 
+}
+
+
+#ccgm a{
+   height: 85px;
+   width: 170px; 
+   background: url('IMAGES/button_ccgm.png') no-repeat left top;
+}
+#ccgm a:hover{
+   background-position: left -85px; 
+}
+
+
+  
+  
+  
+
+#HTfirstaid a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_firstaid.gif') no-repeat left top;
+}
+#HTfirstaid a:hover{
+   background-position: left -150px; 
+}
+
+
+#HTillness a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_illness.gif') no-repeat left top;
+}
+#HTillness a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTcoldflu a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_coldflu.gif') no-repeat left top;
+}
+#HTcoldflu a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTalcoholdrugs a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_alcoholdrugs.gif') no-repeat left top;
+}
+#HTalcoholdrugs a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTnutrition a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_nutrition.gif') no-repeat left top;
+}
+#HTnutrition a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTsexhelathrel a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_sexhealth.gif') no-repeat left top;
+}
+#HTsexhelathrel a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTskin a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_skin.gif') no-repeat left top;
+}
+#HTskin a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTmentalhealth a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_mentalhealth.gif') no-repeat left top;
+}
+#HTmentalhealth a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTsafety a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_safety.gif') no-repeat left top;
+}
+#HTsafety a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTdigestion a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_digestion.gif') no-repeat left top;
+}
+#HTdigestion a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTtravel a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_travel.gif') no-repeat left top;
+}
+#HTtravel a:hover{
+   background-position: left -150px; 
+}
+
+
+
+#HTlifestyle a{
+   height: 150px;
+   width: 90px; 
+   background: url('IMAGES/HTbutton_lifestyle.gif') no-repeat left top;
+}
+#HTlifestyle a:hover{
+   background-position: left -150px; 
+}
+
+
+#pill a{
+   height: 100px;
+   width: 170px; 
+   background: url('IMAGES/button_video_pill.png') no-repeat left top;
+}
+#pill a:hover{
+   background-position: left -100px; 
+}
+
+#ec a{
+   height: 100px;
+   width: 170px; 
+   background: url('IMAGES/button_video_ec.png') no-repeat left top;
+}
+#ec a:hover{
+   background-position: left -100px; 
+}
+
+#intro a{
+   height: 100px;
+   width: 170px; 
+   background: url('IMAGES/button_video_intro.png') no-repeat left top;
+}
+#intro a:hover{
+   background-position: left -100px; 
+}
+
+
+#chargesv a{
+   height: 100px;
+   width: 170px; 
+   background: url('IMAGES/button_video_charges.png') no-repeat left top;
+}
+#chargesv a:hover{
+   background-position: left -100px; 
+}
+
+
+#checkbox a{
+   height: 20px;
+   width: 20px; 
+   background: url('IMAGES/checkbox.gif') no-repeat left top;
+}
+#checkbox a:hover{
+   background-position: left -20px; 
+}
+

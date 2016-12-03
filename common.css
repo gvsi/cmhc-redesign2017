@@ -66,6 +66,11 @@
     
     }
     
+     .top-buffervav { 
+    margin-top:30px;
+    
+    }
+    
     
      .row-blue{
      background-color: #1b2a39;
@@ -319,7 +324,7 @@
      	background-color:transparent;
      	border-color:transparent;
      	font-family:"Helvetica Neue", Helvetica, Verdana, Arial, sans-serif !important;
-     	color: #000000;
+     	color: #FFFFFF;
 		font-weight: normal;
      	font-size: 16px;
   		line-height: 1.428571429;
@@ -330,7 +335,7 @@
 	 .btn-info-small:focus,
 	 .btn-info-small:active,
 	 .open .dropdown-toggle.btn-info-small{
-	    color: #000000;
+	    color: #ffffff;
 	    background-color: transparent;
 	    border-color: transparent;
 	 }
@@ -1071,7 +1076,7 @@
 	.btn-orange{
      	background-color:transparent;
      	border-color:transparent;
-     	font-size: 16px; line-height: 24px; color: #ffcc99;
+     	font-size: 17px; line-height: 24px; color: #ffcc99;
      	letter-spacing: 0.13ex;
      	
      }
@@ -1149,7 +1154,7 @@
 	.class-footer{
      	background-color:transparent;
      	border-color:transparent;
-		font-size: 12px; line-height: 10px; letter-spacing: 0.25ex; color: #cbcdd5;
+		font-size: 12px; line-height: 10px; letter-spacing: 0.25ex; color: #ffffff;
      }
      .class-footer:hover,
 	 .class-footer:focus,
