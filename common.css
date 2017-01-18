@@ -2244,3 +2244,16 @@ a:focus.a_class_white { font-family: Verdana, Arial, Helvetica, sans-serif; font
 		display: inline-block;
 	}
 }
+
+@media only screen and (max-width : 320px) {
+	.dropbtn {
+		width: 250px;
+		font-size: 15px;
+	}
+
+	.dropbtn i {
+		font-size: 20px;
+		position: absolute;
+		top: 23px
+	}
+}
