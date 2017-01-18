@@ -735,12 +735,12 @@
 			}
 		}, function() {
 			if (viewport.is('lg')) {
-				if (!$(this).next(".dropdown-content").is(":hover")) {
-					$(this).next(".dropdown-content").hide();
-					console.log('asd')
-				} else {
-					console.log('nope')
-				}
+				var that = this;
+				setTimeout(function(){
+					if (!$(that).next(".dropdown-content").is(":hover")) {
+						$(that).next(".dropdown-content").hide();
+					}
+				}, 100);
 			}
 		});
 
