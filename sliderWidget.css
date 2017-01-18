@@ -1,0 +1,202 @@
+@keyframes textEmphasis {
+  0% {
+    color: black;
+    font-size: 30px;
+  }
+  50% {
+    color: #CF5300;
+    font-size: 27px;
+  }
+  100% {
+    color: black;
+    font-size: 30px;
+  }
+}
+#sliderArea {
+  padding: 20px;
+  height: 100%;
+}
+#sliderArea h2 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 30px;
+  animation-name: textEmphasis;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+#sliderArea p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #1D1F20;
+  font-size: 18px;
+}
+#sliderArea h4 a{
+  margin-top: 40px;
+  color: #3166b6;
+}
+
+/* Slider Style */
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 70%;
+  margin: auto;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: black;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #CF5300;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #CF5300;
+  cursor: pointer;
+  margin-top: -20px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #CF5300;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #CF5300;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #CF5300;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-radius: 3px;
+  background: #CF5300;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #141212;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #141212;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #141212;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #141212;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+
+
+#sliderCol {
+	height: 433px;
+	padding-top: 50px;
+}
+
+#sliderWidget {
+	margin-top: 10px;
+}
+
+#sliderWidget::after {
+	display: inline-block;
+    width: 45px;
+    height: 40px;
+    content: "";
+    background-image: url('./images/slider/continuumgraphic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sliderWidget::before {
+	display: inline-block;
+    width: 35px;
+    height: 30px;
+    content: "";
+    background-image: url('./images/slider/continuumgraphic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+#sliderTextLow {
+	text-align: left;
+	padding: 0 7px;
+}
+
+@media(max-width: 769px) {
+	#sliderCol {
+		display: none;
+	}
+}

@@ -8,6 +8,10 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="common.css">
+	
+	<!-- Slider Widget -->
+	<link rel="stylesheet" href="sliderWidget.css">
+	
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap-toolkit.min.js"></script>
 	<link rel="icon"
@@ -325,8 +329,25 @@
 	<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::   promotional space   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
 	<div class="row">
-		<div class="col-sm-8 col-xs-12">
-			<a href="groups.html"><br/><img src="images/largepromotions/homepromo_groups.jpg" class="img-responsive" alt="demo" border="0" /></a>
+		<div class="col-sm-8 col-xs-12" id="sliderCol">
+			<div id="sliderArea" class='text-center'>
+			  <h2>
+				Position the dot on where you are on the continuum of feeling fearful
+			  </h2>
+			  <p id='sliderText'>
+				text
+			  </p>
+				<input
+				type="range"
+				id='sliderWidget'
+				>
+  
+			  <h4>
+				<a href="https://cmhc.utexas.edu/thrive/index.html" target="_blank">
+				  Check out the free iPhone app - Thrive at UT
+				</a>
+			  </h4>
+			</div>
 		</div>
 
 
@@ -691,6 +712,27 @@
 
 	})(jQuery, ResponsiveBootstrapToolkit);
 
+</script>
+
+<script>
+	var lowText = "Close your eyes and take one minute to visualize a peaceful place";
+
+	var midText = "Breathe in for four slow counts, hold your breathe four counts, and exhale for four slow counts. Repeat 4X";
+
+	var highText = "Hold an ice cube until it melts, or place an ice pack on your temples";
+
+	$('#sliderText').html(midText);
+
+	$(document).on('input', '#sliderWidget', function() {
+		var value = $(this).val();
+		if(value < 30) {
+			 $('#sliderText').html(lowText);
+		  }else if (value >= 30 && value < 60){
+			 $('#sliderText').html(midText);
+		  }else {
+			 $('#sliderText').html(highText);
+		  }
+	})
 </script>
 
 </html>

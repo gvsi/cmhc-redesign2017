@@ -194,7 +194,7 @@
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/anxiety.html"class="a_class_dropdown">Anxiety</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/assertiveness.html"class="a_class_dropdown">Assertiveness</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/buildingfriendships.html"class="a_class_dropdown">Building Friendships</a>
-							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/ultureadjustment.html"class="a_class_dropdown">Cultural Adjustment</a>
+							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/cultureadjustment.html"class="a_class_dropdown">Cultural Adjustment</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/vav/vav_relationshipviolence.html"class="a_class_dropdown">Dating & Relationship Violence</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/depression.html"class="a_class_dropdown">Depression</a>
 							<a href="https://test.cmhc.utexas.edu/REDESIGN2017/mindfuleating.html#1"class="a_class_dropdown">Eating Disorders</a>
@@ -228,7 +228,7 @@
 			<div class="dropdown">
 				<button class="dropbtn">Counseling & Medication <i class="fa fa-angle-double-down" aria-hidden="true"></i> <i class="fa fa-angle-double-up" style="display:none "aria-hidden="true"></i></button>
 				<div class="dropdown-content">
-					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/gettingstarted.html"class="a_class_dropdown"><b>Getting Started, </b><BR><I>click here to read about the first steps to accessing services at CMHC.</I></a>
+					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/gettingstarted.html"class="a_class_dropdown"><b>Getting Started, </b><BR><I>Read about the first steps to accessing services at CMHC.</I></a>
 					
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/groups.html"class="a_class_dropdown">Groups & classes</a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/individualcounseling.html"class="a_class_dropdown"> Short-term individual counseling</a>
@@ -236,14 +236,23 @@
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/questions.html"class="a_class_dropdown">Questions and answers</a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/counseling_resources.html"class="a_class_dropdown">Off-campus counseling / mental health resources</a>
 					
-					 <P><span class="bodytext_orange3">Specialty Programs</span></P>
+					 <div>
+							<div class="submenubtn">
+								<a href="#"><b>Specialty Programs</b>
+									<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+									<i class="fa fa-angle-double-up" style="display:none" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="dropdown-content sub-dropdown-content">
 					
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/alcoholdrugs.html"class="a_class_dropdown">Alcohol and Other Drug Program</a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/integratedhealth.html"class="a_class_dropdown">Integrated Health Program</a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/mindfuleating.html"class="a_class_dropdown">Mindful Eating Program</a>
-					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/vav/vav_survivorservices.html"class="a_class_dropdown">Services for Survivors of Sexual Assault</a>
+					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/vav/vav_survivorservices.html"class="a_class_dropdown">Services for Survivors of Sexual Assault <I>(VAV program)</I></a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/CARE.html"class="a_class_dropdown">Counselors in Academic Residence Program (CARE)</a>
 					<a href="https://test.cmhc.utexas.edu/REDESIGN2017/diversitycoordinators.html"class="a_class_dropdown">Diversity Coordinator Program</a>
+				</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -273,6 +282,7 @@
 <script>
 
 	$(".submenubtn").click(function(e) {
+		console.log("heu");
 		e.preventDefault();
 		$(this).next(".sub-dropdown-content").toggle();
 		$(this).find(".fa-angle-double-up").toggle();
