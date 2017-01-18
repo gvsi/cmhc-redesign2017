@@ -54,7 +54,7 @@
 
 		<div class="hidden-xs hidden-sm col-md-3" style="margin-top: 40px">&nbsp; <a class="a_class_dropdown" href="https://test.cmhc.utexas.edu/REDESIGN2017/aboutcmhc.html">About CMHC</a> <span class="orangetext">&nbsp;l&nbsp;</span> <a class="a_class_dropdown" href="https://test.cmhc.utexas.edu/REDESIGN2017/contactcmhc.html">Contact</a></span>
 		</div>
-		
+
 		<div class="col-xs-2 visible-xs" style="margin-top: 15px">
 			<img src="images/universal/searchicon_home.png" id="mobile-search-btn" alt="search" style="height: 26px;top: 10px; right: 20px;position: absolute; cursor: pointer">
 		</div>
@@ -737,6 +737,9 @@
 			if (viewport.is('lg')) {
 				if (!$(this).next(".dropdown-content").is(":hover")) {
 					$(this).next(".dropdown-content").hide();
+					console.log('asd')
+				} else {
+					console.log('nope')
 				}
 			}
 		});
